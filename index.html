@@ -24,16 +24,30 @@
             <img src="./assets/profile-pic.png" alt="Profile Picture">
         </div>
         <div class="profile-info">
-            <p>Hello, my name is</p>
-            <h1>Brandon Tsai</h1>
-            <div class="profile-buttons">
-                <button>Download CV</button>
-                <button>Contact Info</button>
+            <p class="profile-line-1">Hello, my name is</p>
+            <h1 class="name">Brandon Tsai</h1>
+            <div class="profile-btns">
+                <button class="btn cv-btn" 
+                    onclick="window.open('./assets/resume-example.pdf')">
+                    Download CV
+                </button>
+                <button class="btn contact-btn" 
+                    onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
             </div>
-        </div>
-        <div class="social-buttons">
-            <input type="image" src="./assets/linkedin.png">
-            <input type="image" src="./assets/github.png">
+            <div id="social-btns">
+                <img src="./assets/linkedin.png" 
+                    alt="linkedin profile"
+                    class="icon" 
+                    onclick="location.href='https://www.linkedin.com/in/brandon-tsai-490837298'"
+                />
+                <img src="./assets/github.png" 
+                    alt="github profile"
+                    class="icon" 
+                    onclick="location.href='https://www.github.com/tsaibrandon'"
+                />
+            </div>
         </div>
     </section>
     <section id="about">
