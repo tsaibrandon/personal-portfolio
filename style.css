@@ -197,3 +197,55 @@ h1 {
 .profile-btns {
     gap: 1rem;
 }
+
+/* About Section */
+
+#about {
+    position: relative;
+}
+
+.ee-boxes {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-boxes {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ee-boxes, .about-boxes {
+    display: flex;
+}
+
+.about-pfp {
+    border-radius: 2rem;
+}
+
+.arrow-icon {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.about-box {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.about-section {
+    gap: 4rem;
+    height: 80%;
+}
+
+.about-photo {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
