@@ -200,11 +200,11 @@ h1 {
 
 /* About Section */
 
-/* #about {
+#about {
     position: relative;
 }
 
-.ee-boxes {
+/* .ee-boxes {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
