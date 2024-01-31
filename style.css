@@ -124,7 +124,7 @@ section {
     font-weight: 600;
 }
 
-.profile-line-1 {
+.line-1 {
     text-align: center;
 }
 
@@ -133,7 +133,7 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.name {
+.heading {
     font-size: 3rem;
     text-align: center;
 }
@@ -200,22 +200,39 @@ h1 {
 
 /* About Section */
 
+/* 
+    the next 2 styling was from chatgpt
+    turned the .about-section into a flex containers and gave the .pfp and .ee-boxes a margin to create space between them, and the width of the icon is adjusted as needed
+*/
+
+.about-section {
+    display: flex;
+    align-items: center; 
+    /* align items vertically */
+}
+
+.pfp, .ee-boxes {
+    margin-right: 20px;
+    /* adjust the margin as needed */
+}
+
+
 #about {
     position: relative;
 }
 
-/* .ee-boxes {
+.container-boxes {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
-.about-boxes {
+.about-container {
     justify-content: center;
     flex-direction: column;
 }
 
-.ee-boxes, .about-boxes {
+.container-boxes, .about-boxes {
     display: flex;
 }
 
@@ -229,7 +246,7 @@ h1 {
     bottom: 2.5rem;
 }
 
-.about-box {
+.box {
     padding: 1.5rem;
     flex: 1;
     background: white;
@@ -248,4 +265,4 @@ h1 {
     height: 400px;
     width: 400px;
     margin: auto 0;
-} */
+}
