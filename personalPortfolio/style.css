@@ -36,6 +36,8 @@ a {
 /* LAYOUT
 /*******************************************/
 header {
+     display: flex;
+     align-items: center;
      height: 100px;
      padding: 0 50px;
 }
@@ -44,19 +46,21 @@ nav {
      display: flex;
      justify-content: space-between;
      align-items: center;
-
-     /* margin: auto 0; */
+     width: 100%;
 }
 
 .leftNavContainer,
 .rightNavContainer {
      display: flex;
      flex-direction: row;
-     /* justify-content: space-around; */
 }
 
 .leftNavContainer {
      width: 550px;
+}
+
+.logoContainer {
+     height: 100%;
 }
 
 .logo {
@@ -79,12 +83,18 @@ nav {
 .rightNavContainer {
      display: flex;
      justify-content: space-between;
-     width: 250px;
+     width: 300px;
 }
 
 .iconContainer {
      display: flex;
      align-items: center;
-     /* justify-content: space-around; */
+     justify-content: space-around;
      width: 100%;
+}
+
+.resumeButton {
+     padding: 12px 10px;
+     border: 1px solid black;
+     border-radius: 10px;
 }
