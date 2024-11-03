@@ -7,6 +7,11 @@
 
     <title>Brandon Tsai</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Zilla+Slab:wght@400;700&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/af1a88bb53.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,7 +29,7 @@
                 <div class="navContainer">
                     <ul>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Experience</a></li>
+                        <!-- <li><a href="#">Experience</a></li> -->
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -35,37 +40,43 @@
                 <div class="iconContainer">
                     <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
                     <a href=""><i class="fa-regular fa-envelope"></i></a>
+                    <!-- maybe move this to under my introduction in the main -->
                 </div>
 
-                <div class="buttonContainer">
+                <!-- <div class="buttonContainer">
                     <button class="resumeButton">Resume</button>
-                </div>
+                    maybe change this to a hire me in the corner
+                </div> -->
             </div>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <div>
+    <main id="entirePage">
+        <section id="landingPage">
+            <div class="landingLine1">
                 <p>Hi, my name is</p>
             </div>
-            <div>
+            <div class="landingLine2">
                 <h1>Brandon Tsai</h1>
             </div>
-            <div>
-                <h2>I create things on the web.</h2>
+            <div class="landingLine3">
+                <p>I'm a <span>software engineer</span> from Los Angeles, California</p>
             </div>
-            <div>
-                <p>I'm a software engineer that specializes in building websites for small businesses. Let me build your
-                    next website!</p>
-            </div>
-            <div class="buttonContainer">
+            <!-- <div class="buttonContainer">
                 <button>Contact</button>
                 <button>Projects</button>
                 <button>Resume</button>
-            </div>
+
+                figure out if we want to leave anything here
+            </div> -->
         </section>
+
+        <section class="experience"></section>
+        <section class="projects"></section>
+        <section class="contact"></section>
     </main>
 </body>
 
