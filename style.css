@@ -28,6 +28,11 @@ a {
 
 button {
      font-family: "Zilla Slab", "Roboto", serif;
+     font-size: medium;
+     border: 1px solid black;
+     border-radius: 10px;
+     background-color: #84A98C;
+     padding: 10px 8px;
 }
 
 * {
@@ -153,14 +158,28 @@ nav {
 
 /* freelance styling */
 #freelance {
-     height: 500px;
-     margin: 0 -100px;
+     display: flex;
+     flex-direction: column;
+     /* justify-content: space-around; */
+     height: 400px;
+     margin: 0 -100px 80px -100px;
      /* Negative margin to override */
      padding: 0 100px;
-     width: calc(100% + 200px);
-     /* Extend the width to cover the margins */
+     /* width: calc(100% + 200px);
+     Extend the width to cover the margins */
      color: white;
      background-color: #354F52;
+}
+
+.freelanceTitle {
+     font-size: 30px;
+     padding: 80px 0 30px 0;
+}
+
+.freelanceInfo {
+     font-family: "Roboto", serif;
+     font-size: 25px;
+     padding: 0 0 30px 0;
 }
 
 /* projects styling */
@@ -169,7 +188,7 @@ nav {
      flex-direction: column;
      justify-content: space-between;
      height: 100vh;
-     margin: 0 100px;
+     margin: 0 100px 80px 100px;
 }
 
 .projectTitle {
@@ -206,4 +225,30 @@ nav {
      align-items: center;
      font-size: 20px;
      text-decoration: underline;
+     margin: 20px 0 0 0;
+}
+
+/* contact styling */
+#contact {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0 -100px;
+     padding: 0 500px;
+     height: 500px;
+     background-color: #354F52;
+     color: white;
+}
+
+.contactTitle {
+     font-size: 30px;
+     text-align: center;
+     padding: 80px 0 20px 0;
+}
+
+.contactInfo {
+     font-family: "Roboto", serif;
+     font-size: 25px;
+     text-align: center;
+     padding: 0 0 20px 0;
 }
