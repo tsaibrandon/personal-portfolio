@@ -12,7 +12,7 @@ h2 {
 
 body {
      padding: 100px 0 0 0;
-     background-color: #2F3E46;
+     background-color: #283618;
      color: white;
      font-family: "Zilla Slab", "Roboto", serif;
 
@@ -30,7 +30,7 @@ a {
 }
 
 a:hover {
-     color: #70E000;
+     color: #DDA15E;
 }
 
 a::before {
@@ -41,7 +41,7 @@ a::before {
      height: 1px;
      bottom: 0;
      left: 0;
-     background-color: #70E000;
+     background-color: #DDA15E;
      transform: scaleX(0);
      transform-origin: top left;
      transition: transform 0.5s ease;
@@ -56,16 +56,21 @@ button {
      font-size: medium;
      border: 1px solid black;
      border-radius: 10px;
-     background-color: #84A98C;
+     background-color: #DDA15E;
      padding: 10px 8px;
      transition: all 0.3s ease-in-out;
 }
 
 button:hover {
      transform: scale(1.1);
-     background-color: #70E000;
+     background-color: #DDA15E;
      cursor: pointer;
 }
+
+/* img {
+     height: 400px;
+     width: 600px;
+} */
 
 * {
      box-sizing: border-box;
@@ -104,7 +109,7 @@ nav {
      position: fixed;
      top: 0;
      left: 0;
-     background-color: #354F52;
+     background-color: #283618;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
      transition: transform 0.2s ease-out 0.1s;
 }
@@ -128,7 +133,7 @@ nav {
      align-items: center;
      height: 46px;
      width: 46px;
-     border: 4px solid #84A98C;
+     border: 4px solid #DDA15E;
 }
 
 .logo p {
@@ -198,7 +203,7 @@ nav {
 
 .landingLine3 span {
      font-weight: 700;
-     color: #70E000;
+     color: #DDA15E;
 }
 
 /* freelance styling */
@@ -207,13 +212,13 @@ nav {
      flex-direction: column;
      /* justify-content: space-around; */
      height: 400px;
-     margin: 0 -100px 200px -100px;
+     margin: 0 -100px 150px -100px;
      /* Negative margin to override */
      padding: 0 100px;
      /* width: calc(100% + 200px);
      Extend the width to cover the margins */
-     color: white;
-     background-color: #354F52;
+     color: black;
+     background-color: #faedcd;
 }
 
 .freelanceTitle {
@@ -232,7 +237,7 @@ nav {
      display: flex;
      flex-direction: column;
      justify-content: space-between;
-     height: 100vh;
+     height: 1000px;
      margin: 0 100px 80px 100px;
 }
 
@@ -241,14 +246,15 @@ nav {
      flex-direction: column;
      align-items: center;
      font-size: 30px;
-     margin: 0 0 20px 0;
+     margin: 0 0 50px 0;
 }
 
-.projectContainer {
+.projectsContainer {
      /* display: flex;
      align-items: center;
      justify-content: space-around; */
      height: 100%;
+     padding: 0 60px;
 }
 
 .projectRow {
@@ -258,10 +264,28 @@ nav {
      height: 50%;
 }
 
-.project {
+.projectContainer {
      height: 400px;
      width: 600px;
      border: 1px solid black;
+     /* overflow: hidden; */
+     position: relative;
+}
+
+.projectImg {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.descriptionContainer {
+     width: 100%;
+     height: 100%;
+     bottom: 0;
+     left: 0;
+     position: absolute;
+     background: #fff;
+     backdrop-filter: blur(5px);
 }
 
 .linkContainer {
@@ -280,8 +304,8 @@ nav {
      margin: 0 -100px;
      padding: 0 500px;
      height: 500px;
-     background-color: #354F52;
-     color: white;
+     background-color: #faedcd;
+     color: black;
 }
 
 .contactTitle {
