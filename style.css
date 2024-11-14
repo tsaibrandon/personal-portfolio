@@ -11,7 +11,6 @@ h2 {
 }
 
 body {
-     padding: 100px 0 0 0;
      background-color: #283618;
      color: white;
      font-family: "Zilla Slab", "Roboto", serif;
@@ -97,6 +96,9 @@ button:hover {
 header {
      display: flex;
      align-items: center;
+     position: absolute;
+     height: 100px;
+     width: 100%;
 }
 
 nav {
@@ -121,23 +123,24 @@ nav {
 }
 
 .leftNavContainer {
+     height: 100%;
      width: 400px;
 }
 
 .logoContainer {
+     display: flex;
+     align-items: center;
      height: 100%;
 }
 
 .logo {
      display: flex;
+     justify-content: center;
      align-items: center;
      height: 46px;
      width: 46px;
      border: 4px solid #DDA15E;
-}
-
-.logo p {
-     width: 100%;
+     border-radius: 10px;
      text-align: center;
      font-size: 20px;
 }
@@ -149,15 +152,14 @@ nav {
      padding: 0 0 0 25px;
 }
 
-.navContainer ul {
+.navLinksContainer {
      display: flex;
      justify-content: space-around;
      width: 100%;
 }
 
 .rightNavContainer {
-     display: flex;
-     justify-content: space-between;
+     height: 100%;
      width: 300px;
 }
 
@@ -181,14 +183,28 @@ nav {
 
 /* landingPage styling */
 #landingPage {
-     display: flex;
+     /* display: flex;
      flex-direction: column;
-     justify-content: center;
+     justify-content: center; */
      height: 100vh;
      margin: 0 200px;
 }
 
-.landingLine1 {
+.landingContainer1,
+.landingContainer2,
+.landingContainer3 {
+     height: 33.3333%;
+     display: flex;
+     flex-direction: column;
+}
+
+.landingContainer1 {
+     justify-content: end;
+     font-size: 30px;
+}
+
+
+/* .landingLine1 {
      font-size: 30px
 }
 
@@ -204,7 +220,7 @@ nav {
 .landingLine3 span {
      font-weight: 700;
      color: #DDA15E;
-}
+} */
 
 /* freelance styling */
 #freelance {
@@ -295,7 +311,7 @@ nav {
      display: flex;
      flex-direction: column;
      justify-content: center;
-     transition: 1s;
+     transition: 1s ease-in-out;
 }
 
 .titleContainer {
