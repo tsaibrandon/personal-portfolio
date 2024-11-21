@@ -11,8 +11,8 @@ h2 {
 }
 
 body {
-     background-color: #283618;
-     color: white;
+     background-color: rgb(254, 251, 239);
+     color: rgb(54, 71, 102);
      font-family: "Zilla Slab", "Roboto", serif;
 
 }
@@ -27,7 +27,7 @@ ul {
 }
 
 a {
-     color: white;
+     color: rgb(54, 71, 102);
      position: relative;
      text-decoration: none;
      transition: all 0.5s;
@@ -111,7 +111,7 @@ nav {
      position: fixed;
      top: 0;
      left: 0;
-     background-color: #283618;
+     background-color: rgb(232, 229, 219);
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
      transition: transform 0.2s ease-out 0.1s;
 }
@@ -139,7 +139,7 @@ nav {
      align-items: center;
      height: 46px;
      width: 46px;
-     border: 4px solid #DDA15E;
+     border: 4px solid rgb(96, 158, 126);
      border-radius: 10px;
      text-align: center;
      font-size: 20px;
@@ -183,44 +183,35 @@ nav {
 
 /* landingPage styling */
 #landingPage {
-     /* display: flex;
-     flex-direction: column;
-     justify-content: center; */
-     height: 100vh;
-     margin: 0 200px;
-}
-
-.landingContainer1,
-.landingContainer2,
-.landingContainer3 {
-     height: 33.3333%;
      display: flex;
-     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     height: 100vh;
+     margin: 0 250px;
 }
 
-.landingContainer1 {
-     justify-content: end;
+.line1 {
      font-size: 30px;
 }
 
-
-/* .landingLine1 {
-     font-size: 30px
+.line2 {
+     font-size: 100px;
 }
 
-.landingLine2 {
-     font-size: 80px;
-}
-
-.landingLine3 {
+.line3 {
      font-size: 40px;
-     width: 50%;
+     width: 75%;
 }
 
-.landingLine3 span {
+.line3 span {
      font-weight: 700;
-     color: #DDA15E;
-} */
+     color: rgb(96, 158, 126);
+}
+
+.landingImg {
+     height: 500px;
+     width: auto;
+}
 
 /* freelance styling */
 #freelance {
@@ -398,7 +389,8 @@ nav {
 }
 
 .fadeIn {
-     animation: 0.5s fadeIn;
+     visibility: hidden;
+     animation: 0.5s fadeIn forwards;
 }
 
 @keyframes fadeIn {
@@ -407,6 +399,7 @@ nav {
      }
 
      100% {
+          visibility: visible;
           opacity: 1;
      }
 }
@@ -489,4 +482,24 @@ nav {
 
 .delay11 {
      animation-delay: 2.2s;
+}
+
+.fadeInSlower {
+     visibility: hidden;
+     animation: 1s fadeIn forwards;
+}
+
+@keyframes fadeInSlower {
+     0% {
+          opacity: 0;
+     }
+
+     100% {
+          visibility: visible;
+          opacity: 1;
+     }
+}
+
+.delay12 {
+     animation-delay: 2.8s;
 }
