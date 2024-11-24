@@ -223,17 +223,13 @@ nav {
 
 /* freelance styling */
 #freelance {
-     display: flex;
-     flex-direction: column;
-     /* justify-content: space-around; */
-     height: 400px;
-     margin: 0 -100px 150px -100px;
-     /* Negative margin to override */
-     padding: 0 100px;
-     /* width: calc(100% + 200px);
-     Extend the width to cover the margins */
-     color: black;
-     background-color: #faedcd;
+     /* display: flex;
+     flex-direction: column; */
+     height: 600px;
+     margin: 0 200px;
+     background-image: url(assets/whiteboard.png);
+     background-repeat: no-repeat;
+
 }
 
 .freelanceTitle {
