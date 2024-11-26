@@ -273,7 +273,7 @@ nav {
      flex-direction: column;
      justify-content: space-between;
      height: 1000px;
-     margin: 0 100px 80px 100px;
+     margin: 0 200px;
 }
 
 .projectSectionTitle {
@@ -281,32 +281,34 @@ nav {
      flex-direction: column;
      align-items: center;
      font-size: 30px;
-     margin: 0 0 50px 0;
+     /* margin: 0 0 50px 0; */
 }
 
 .allProjectsContainer {
-     /* display: flex;
+     display: flex;
+     flex-direction: column;
      align-items: center;
-     justify-content: space-around; */
+     justify-content: space-around;
      height: 100%;
-     padding: 0 60px;
+     /* padding: 0 60px; */
 }
 
 .projectRow {
      display: flex;
-     align-items: center;
+     /* align-items: center; */
      justify-content: space-around;
-     height: 50%;
+     /* height: 50%; */
+     width: 100%;
 }
 
-.projectContainer {
-     height: 400px;
-     width: 600px;
+.project {
+     height: 300px;
+     width: 500px;
      overflow: hidden;
      position: relative;
 }
 
-.projectContainer .imgContainer {
+.project .imgContainer {
      height: 100%;
      width: 100%;
 }
@@ -344,7 +346,7 @@ nav {
      font-size: 40px;
 }
 
-.projectContainer .iconContainer {
+.project .iconContainer {
      height: 16.667%;
      width: 100%;
      font-size: 25px;
@@ -362,7 +364,7 @@ nav {
      font-size: 20px;
 }
 
-.projectContainer .buttonContainer {
+.project .buttonContainer {
      height: 16.667%;
      width: 100%;
      display: flex;
@@ -371,7 +373,7 @@ nav {
      padding: 0 370px 0 0;
 }
 
-.projectContainer:hover .projectInformation {
+.project:hover .projectInformation {
      bottom: 0;
 }
 
