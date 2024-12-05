@@ -267,6 +267,10 @@ nav {
      margin: 120px 0 0 0;
 }
 
+.imgContainer .buttonContainer button {
+     margin: 0 4px;
+}
+
 /* projects styling */
 #projects {
      display: flex;
@@ -380,6 +384,10 @@ nav {
      align-items: center;
      /* justify-content: space-between; */
      /* padding: 0 370px 0 0; */
+}
+
+.project .buttonContainer button {
+     margin: 0 4px;
 }
 
 .project:hover .projectInformation {
