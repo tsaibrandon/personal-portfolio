@@ -10,3 +10,10 @@ window.addEventListener("scroll", () => {
 
     lastScrollY = window.scrollY
 })
+
+
+const resumeButton = document.querySelector('.resumeButton');
+
+resumeButton.addEventListener('animationend', () => {
+    resumeButton.classList.remove('fallIntoPlace');
+});
