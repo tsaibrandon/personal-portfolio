@@ -27,17 +27,20 @@ ul {
 }
 
 a {
+     text-decoration: none;
+}
+
+a.link {
      color: rgb(54, 71, 102);
      position: relative;
-     text-decoration: none;
      transition: all 0.5s;
 }
 
-a:hover {
+a.link:hover {
      color: #48B4A0;
 }
 
-a::before {
+a.link::before {
      content: "";
      position: absolute;
      display: block;
@@ -51,13 +54,14 @@ a::before {
      transition: transform 0.5s ease;
 }
 
-a:hover::before {
+a.link:hover::before {
      transform: scaleX(1);
 }
 
-button {
+a.button {
      font-family: "Zilla Slab", "Roboto", serif;
      font-size: medium;
+     color: black;
      border: 1px solid black;
      border-radius: 10px;
      background-color: #48B4A0;
@@ -65,9 +69,9 @@ button {
      transition: all 0.3s ease-in-out;
 }
 
-button:hover {
+a.button:hover {
      transform: scale(1.1);
-     background-color: #48B4A0;
+     /* background-color: #48B4A0; */
      cursor: pointer;
 }
 
@@ -134,7 +138,7 @@ nav {
      height: 100%;
 }
 
-.logoContainer button {
+.logoContainer .button {
      display: flex;
      justify-content: center;
      align-items: center;
@@ -178,7 +182,7 @@ nav {
      align-items: center;
 }
 
-.rightNavContainer .buttonContainer button {
+.rightNavContainer .buttonContainer .button {
      padding: 12.5px 12px;
 }
 
@@ -273,7 +277,12 @@ nav {
      margin: 120px 0 0 0;
 }
 
-.imgContainer .buttonContainer button {
+.imgContainer .buttonContainer ul {
+     display: flex;
+     align-items: center;
+}
+
+.imgContainer .buttonContainer .button {
      margin: 0 4px;
 }
 
@@ -388,13 +397,20 @@ nav {
 .project .buttonContainer {
      height: 25%;
      width: 100%;
-     display: flex;
-     align-items: center;
+     /* display: flex;
+     align-items: center; */
      /* justify-content: space-between; */
      /* padding: 0 370px 0 0; */
 }
 
-.project .buttonContainer button {
+.project .buttonContainer ul {
+     display: flex;
+     align-items: center;
+     height: 100%;
+     width: 100%;
+}
+
+.project .buttonContainer .button {
      margin: 0 4px;
 }
 
@@ -433,7 +449,7 @@ nav {
      margin: 0 0 80px 0;
 }
 
-#contact .buttonContainer button {
+#contact .buttonContainer .button {
      padding: 10px 28px;
      font-size: large;
 }
