@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brandon Tsai's Portfolio - Software Engineer from Los Angeles, California">
+    <meta name="keywords" content="software engineer, web developer, portfolio, Brandon Tsai">
+    <meta name="author" content="Brandon Tsai">
 
-    <title>Brandon Tsai</title>
+    <title>Brandon Tsai - Software Engineer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,15 +22,15 @@
 
 <body>
     <header>
-        <nav>
+        <nav aria-label="Main navigation">
             <div class="leftNavContainer">
                 <div class="logoContainer">
-                    <a href="index.html" class="button fadeIn">BT</a>
+                    <a href="index.html" class="button fadeIn" aria-label="Home">BT</a>
                 </div>
 
                 <div class="navContainer">
                     <ul class="navLinksContainer">
-                        <li class="fallIntoPlace delay1"><a class="link" href="#">About</a></li>
+                        <li class="fallIntoPlace delay1"><a class="link" href="#about">About</a></li>
                         <!-- <li><a href="#">Experience</a></li> -->
                         <li class="fallIntoPlace delay2"><a class="link" href="#projects">Projects</a></li>
                         <li class="fallIntoPlace delay3"><a class="link" href="#contact">Contact</a></li>
@@ -37,17 +40,21 @@
 
             <div class="rightNavContainer">
                 <div class="iconContainer">
-                    <a href="https://www.linkedin.com/in/tsaibrandon" target="_blank" rel="noopener noreferrer"
-                        class="link fallIntoPlace delay1"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/tsaibrandon" target="_blank" rel="noopener noreferrer"
-                        class="link fallIntoPlace delay2"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/tsaibrandon" target="_blank" rel="noopener noreferrer" class="link fallIntoPlace delay1" aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/tsaibrandon" target="_blank" rel="noopener noreferrer" class="link fallIntoPlace delay2" aria-label="GitHub Profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
                     <!-- <a href="" class="fallIntoPlace delay3"><i class="fa-brands fa-instagram"></i></a>
                     <a href="" class="fallIntoPlace delay4"><i class="fa-brands fa-twitter"></i></a> -->
-                    <a href="" class="link fallIntoPlace delay3"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="mailto:your.email@example.com" class="link fallIntoPlace delay3" aria-label="Email Me">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
                 </div>
 
                 <div class="buttonContainer">
-                    <a href="#" class="button resumeButton fallIntoPlace delay4">Resume</a>
+                    <a href="assets/resume.pdf" class="button resumeButton fallIntoPlace delay4" target="_blank" rel="noopener noreferrer">Resume</a>
                 </div>
             </div>
         </nav>
@@ -67,7 +74,7 @@
                 </div>
             </div>
             <div class="landingImgContainer">
-                <img class="landingImg fadeInSlower delay12" src="assets/man.png" alt="">
+                <img class="landingImg fadeInSlower delay12" src="assets/man.png" alt="Cartoon image of Brandon Tsai">
             </div>
         </section>
 
@@ -75,28 +82,19 @@
             <div></div>
         </section> -->
 
-        <section id="freelance">
+        <section id="about">
             <div class="imgContainer">
-                <img class="boardImg" src="assets/whiteboard.png" alt="">
+                <img class="boardImg" src="assets/whiteboard.png" alt="Whiteboard image">
                 <div class="boardInfoContainer">
                     <div class="freelanceTitle">
                         <h2>Let's Work Together!</h2>
                     </div>
-
                     <div class="freelanceInfo">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nostrum unde consectetur
-                            impedit
-                            nihil
-                            quibusdam recusandae quidem vel facilis culpa sit magnam pariatur, rerum expedita distinctio
-                            maxime
-                            laborum, aut aliquid velit ipsam magni reiciendis repudiandae alias nemo? Similique, illo.
-                            Enim?
-                        </p>
+                        <p>I'm a passionate software engineer with a focus on creating beautiful and functional web applications. I love solving problems and building things that make a difference. Let's collaborate on your next project!</p>
                     </div>
-
                     <div class="buttonContainer">
                         <ul>
-                            <li><a href="#" class="button">About Me</a></li>
+                            <li><a href="#about" class="button">About Me</a></li>
                             <li><a href="#contact" class="button">Contact</a></li>
                         </ul>
                     </div>
@@ -113,12 +111,12 @@
                 <div class="projectRow">
                     <div class="project">
                         <div class="imgContainer">
-                            <img src="assets/cat.jpg" class="projectImg" alt="">
+                            <img src="assets/cat.jpg" class="projectImg" alt="Blank Aqua project screenshot">
                         </div>
                         <div class="projectInformation">
                             <div class="titleIconContainer">
                                 <div class="titleContainer">
-                                    <h1 class="projectTitle">Blank Aqua</h1>
+                                    <h3 class="projectTitle">Blank Aqua</h3>
                                 </div>
                                 <div class="iconContainer">
                                     <i class="devicon-html5-plain-wordmark colored icon"></i>
@@ -128,18 +126,13 @@
                             </div>
                             <div class="descriptionContainer">
                                 <p class="projectDescription">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sit, cumque dolore
-                                    aliquam dolorum optio? Libero eaque sed dolorem nesciunt tenetur, neque voluptas
-                                    dignissimos impedit ducimus quos, sint laborum culpa.
+                                    A modern web application built with HTML, CSS, and JavaScript. This project showcases my skills in front-end development and user interface design.
                                 </p>
                             </div>
                             <div class="buttonContainer">
                                 <ul>
-                                    <li><a href="ramensaitama.netlify.app" target="_blank" rel="noopener noreferrer"
-                                            class="button">Live Demo</a></li>
-                                    <li><a href="https://github.com/tsaibrandon/ramenSaitama" target="_blank"
-                                            rel="noopener noreferrer" class="button">Github</a>
-                                    </li>
+                                    <li><a href="https://blankaqua.netlify.app" target="_blank" rel="noopener noreferrer" class="button">Live Demo</a></li>
+                                    <li><a href="https://github.com/tsaibrandon/blankaqua" target="_blank" rel="noopener noreferrer" class="button">Github</a></li>
                                 </ul>
                             </div>
                         </div>
