@@ -542,7 +542,7 @@ footer .iconContainer a {
 .delay11 { animation-delay: 1.1s; }
 .delay12 { animation-delay: 1.2s; }
 
-/* resonsive layout */
+/* responsive layout */
 @media (max-width: 768px) {
     nav {
         padding: 0 20px;
@@ -603,5 +603,186 @@ footer .iconContainer a {
 
     .rightNavContainer .iconContainer {
         display: none;
+    }
+}
+
+.hamburger {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.hamburger-line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+    background-color: var(--text-color);
+    transition: transform 0.3s ease;
+}
+
+.hamburger.active .hamburger-line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .hamburger-line:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--nav-background);
+    padding: 120px 40px 40px 40px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mobile-nav-links a {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.mobile-resume {
+    margin-top: 50px;
+}
+
+.mobile-resume .button {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+}
+
+.mobile-social-links {
+    display: flex;
+    gap: 30px;
+    margin-top: auto;
+    padding: 40px 0;
+}
+
+.mobile-social-links a {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+    #about .imgContainer {
+        padding: 20px;
+    }
+
+    #about .boardImg {
+        display: none;
+    }
+
+    #about .boardInfoContainer {
+        position: static;
+        width: 100%;
+        padding: 20px;
+        transform: none;
+        background-color: var(--nav-background);
+        border-radius: 10px;
+    }
+
+    #about .freelanceTitle,
+    #about .freelanceInfo {
+        text-align: center;
+    }
+
+    #about .buttonContainer {
+        justify-content: center;
+    }
+
+    #about .buttonContainer ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .navContainer,
+    .rightNavContainer {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    nav {
+        padding: 0 20px;
+    }
+
+    .leftNavContainer {
+        width: auto;
+    }
+
+    .landingImgContainer {
+        display: none;
+    }
+
+    #landingPage {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    .landingLinesContainer {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 20px;
+    }
+
+    .line3 {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 830px) {
+    .projectRow {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .project {
+        width: 100%;
+        margin-bottom: 0;
     }
 }
